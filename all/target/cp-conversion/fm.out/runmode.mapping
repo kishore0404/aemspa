@@ -1,5 +1,0 @@
-#File edited by the Apache Sling Content Package to Sling Feature converter
-#Fri Mar 22 14:03:57 IST 2024
-author=aem-guides-wknd-spa.react.all-author.json
-publish=aem-guides-wknd-spa.react.all-publish.json
-(default)=aem-guides-wknd-spa.react.all.json

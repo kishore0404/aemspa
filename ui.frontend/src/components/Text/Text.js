@@ -28,7 +28,7 @@ require('./Text.css');
 class Text extends Component {
   get richTextContent() {
     return (
-      <div class=""
+      <div className=""
         id={extractModelId(this.props.cqPath)}
         data-rte-editelement
         dangerouslySetInnerHTML={{

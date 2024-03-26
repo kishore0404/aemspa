@@ -46,8 +46,9 @@ const RenderFormComponents = (props: ContainerProps): ReactElement[] => {
             {...props} />
 
       } else {
-        console.error('Component not mapped for resourcetype:', props.name);
+       console.error('Component not mapped for resourcetype:', props.name);
       }
+      return null;
 };
 
 
