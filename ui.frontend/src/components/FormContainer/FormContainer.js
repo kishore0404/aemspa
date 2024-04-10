@@ -22,8 +22,6 @@ import {
 } from '@adobe/aem-react-editable-components';
 import {Link, useHistory } from 'react-router-dom';
 
-import RenderComponentsList from './RenderComponentsList';
-
 import { ComponentMapping } from '@adobe/aem-spa-component-mapping';
 import {
     Utils
@@ -52,17 +50,14 @@ const RenderFormComponents = (props: ContainerProps): ReactElement[] => {
 };
 
 
-const ActivityCalculator = (props) => {    
+const FormComponents = (props) => {    
     const ComponentName = props.name;
     
 
     return (<div>
-                <Link to="/content/wknd-spa-react/us/en/faqs.html">
-                    <div>WKND</div>
-                </Link>
                 <RenderFormComponents {...props} />
             </div>)
     
 }
 
-export default MapTo('wknd-spa-react/components/form/formcontainer')(ActivityCalculator, ContainerConfig);
+export default MapTo('wknd-spa-react/components/form/formcontainer')(FormComponents, ContainerConfig);

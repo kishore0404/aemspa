@@ -30,6 +30,8 @@ import './ActivityCalculator/PreviewSubmit';
 import './ActivityCalculator/VialSelector';
 import './ActivityCalculator/TreatmentSchedule';
 
+import './Navigation/Navigation';
+
 import {MapTo} from '@adobe/aem-react-editable-components';
 
 import {
@@ -77,8 +79,8 @@ MapTo('wknd-spa-react/components/title')(TitleV2, {isEmpty: TitleV2IsEmptyFn});
 
 
 MapTo('wknd-spa-react/components/breadcrumb')(BreadCrumbV2, {isEmpty: BreadCrumbV2IsEmptyFn});
-MapTo('wknd-spa-react/components/navigation')(NavigationV1);
-MapTo('wknd-spa-react/components/languagenavigation')(LanguageNavigationV1);
+//MapTo('wknd-spa-react/components/navigation')(NavigationV1);
+//MapTo('wknd-spa-react/components/languagenavigation')(LanguageNavigationV1);
 
 
 MapTo('wknd-spa-react/components/tabs')(TabsV1, {isEmpty: TabsV1IsEmptyFn});

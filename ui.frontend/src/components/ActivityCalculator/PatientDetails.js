@@ -21,6 +21,16 @@ import {
     MapTo
 } from '@adobe/aem-react-editable-components';
 
+const ContainerConfig = {
+    emptyLabel: 'Custom Form Container',
+
+    isEmpty: function(props) {
+        return !props || !props.cqItemsOrder || props.cqItemsOrder.length === 0;
+    }
+
+
+};
+
 const PatientDetails = (props) => {	
 	const history = useHistory();
 
@@ -38,4 +48,4 @@ const PatientDetails = (props) => {
 	
 }
 
-export default MapTo('wknd-spa-react/components/ActivityCalculator/PatientDetails')(PatientDetails);
+export default MapTo('wknd-spa-react/components/ActivityCalculator/PatientDetails')(PatientDetails, ContainerConfig);
